@@ -30,4 +30,7 @@
 # 19 189.81 Rub.
 # 20 199.8 Rub.
 
-# TODO: your code here
+price = float(input("Цена товара = "))
+
+for n in range(1,21):
+    print(n, round(price * n,2), "Rub.")
