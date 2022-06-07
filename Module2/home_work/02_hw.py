@@ -7,4 +7,11 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+cow = int(input("Количество коров:"))
+
+if cow % 10 == 1 and cow != 11:
+    print(cow, "корова")
+elif cow % 10 >= 2 and cow % 10 <= 4:
+    print(cow, "коровы")
+else:
+    print(cow, "коров")
