@@ -16,7 +16,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = input()
+count = 0
+
+while a != "stop":
+    if int(a) > 0:
+        count += 1
+    a = input()
+
+print(count)
 ```
 
 ---
