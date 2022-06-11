@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое число:"))
+k = 0
+
+for i in range(1, n):
+    if n % i == 0:
+        k += i
+if k == n:
+    print('ДА')
+else:
+    print('НЕТ')
 ```
 
 ---
