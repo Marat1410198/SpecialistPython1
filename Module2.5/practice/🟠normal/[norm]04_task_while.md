@@ -22,7 +22,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input())
+count = 1
+total = ""
+
+while n >= count:
+    total = total + str(count)
+    count += 1
+    print(total)
 ```
 
 ---
