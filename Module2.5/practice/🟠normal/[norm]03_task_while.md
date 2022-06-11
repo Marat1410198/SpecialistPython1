@@ -20,7 +20,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input())
+count = 1
+total = 0
+i = 1
+
+while a >= count:
+    i = count * count
+    total += i
+    count += 1
+
+print(total)
 ```
 
 ---
