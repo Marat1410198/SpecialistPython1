@@ -16,7 +16,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Введите целое число:"))
+b = int(input("Введите целое число:"))
+count = 0
+
+for i in range(a, b + 1):
+    k = 1       # делитель
+    total = 0
+    while k < i:
+        if i % k == 0:
+            total += k
+        k += 1
+    if i == total:
+        print(i)
+        count += 1
+
+print("Количество совершенных чисел:", count)
 ```
 
 ---
