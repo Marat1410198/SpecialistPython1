@@ -36,6 +36,10 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = float(input("Стоимость товара:"))
+n = int(input("Количество товара:"))
+
+for i in range(1, n + 1):
+    print(i, i * cost)
 ```
 
