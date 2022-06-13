@@ -21,5 +21,13 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+
+if a > b:
+    a,b = b,a
+
+for i in range(a, b + 1):
+    if i % 5 == 0:
+        print(i)
 ```
