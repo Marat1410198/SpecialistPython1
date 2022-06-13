@@ -28,7 +28,16 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+
+for i in range(1, n + 1):
+    for k in range(1, n + 1):
+        if k * i >= 10:
+            print(k * i, end=" ")
+        else:
+            print(k * i, end="  ")
+    print("")
+
 ```
 
 ---
