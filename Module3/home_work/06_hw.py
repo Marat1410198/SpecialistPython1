@@ -31,15 +31,32 @@ items = [
         "price": 1700
     },
 ]
+
+brand = []
+for i in range(6):
+    brand.append(items[i].get("brand"))
+
 # Найдите:
-print("Товары на складе представлены брэндами: ")
+print("Товары на складе представлены брэндами:", *set(brand), sep=" ")
 
-# TODO: your code here
+name = []
+for i in range(6):
+    name.append(items[i].get("name"))
 
-print("На складе больше всего товаров брэнда(ов): ")
+count = 0
+total = 0
+clothes = ""
 
-# TODO: your code here
+for i in name:
+    count = name.count(i)
+    if count >= total:
+        total = count
+        clothes = i
 
-print("На складе самый дорогой товар брэнда(ов): ")
+print("На складе больше всего товаров: ",clothes)
 
-# TODO: your code here
+price = []
+for i in range(6):
+    price.append(items[i].get("price"))
+
+print("На складе самый дорогой товар: ",items[price.index(max(price))]["name"])
