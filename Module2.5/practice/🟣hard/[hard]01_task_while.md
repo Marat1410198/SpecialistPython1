@@ -16,7 +16,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+
+my_list = [0, 1]
+
+for i in range(n):
+    my_list.append(my_list[i] + my_list[i + 1])
+
+print(my_list[n - 1])
 ```
 
 ### Данные для самопроверки
