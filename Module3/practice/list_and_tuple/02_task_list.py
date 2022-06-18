@@ -2,5 +2,8 @@
 # Каждый элемент должен быть выведен с новой строки.
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
+count = 1
 
-# TODO: your code here
+for _ in fruits:
+    print(count, _)
+    count += 1
