@@ -4,8 +4,17 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
+count = 1
+n = 1
 
-# TODO: your code here
+for fruit in fruits:
+    if len(fruit) > count:
+        count = len(fruit)
+
+for fruit in fruits:
+    q = count - len(fruit)
+    print(f'{n}.{q * " "} {fruit}')
+    n += 1
 
 # Пример вывода:
 # 1. яблоко
