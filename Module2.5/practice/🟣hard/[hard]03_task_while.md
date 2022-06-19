@@ -17,7 +17,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое число:"))
+
+for i in range(1, n):
+    sum_div = 0
+    sum_div_2 = 0
+    for div in range(1, n):
+        if i > div and i % div == 0:
+            sum_div += div
+    for div2 in range(1, n):
+        if sum_div > div2 and sum_div % div2 == 0:
+            sum_div_2 += div2
+    if i == sum_div_2 and sum_div != sum_div_2:
+        print(sum_div, i)
 ```
 
 ---
