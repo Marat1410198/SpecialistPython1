@@ -1,4 +1,9 @@
 # Даны координаты центров двух окружностей (x1; y1) (x2; y2) и и их радиусы  R1 и R2.
 # Находится ли одна окружность целиком внутри другой
 
-# TODO: your code here
+def circle(x1, y1, R1, x2, y2, R2):
+    lenght = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+    if lenght + min(R1, R2) <= max(R1, R2):
+        return print("Целиком внутри")
+    else:
+        return print("Не внутри")
