@@ -16,11 +16,22 @@
 ### Решение задачи
 
 ```python
-summa = 0
-with open("data/info.txt", "r") as f:
-    pass
 
-print(f"Сумма чисел = {summa}")
+my_list = []
+sum_int = 0
+with open("info.txt", "r") as f:
+    for line in f:
+        my_list += line.split("\n")
+    print(my_list)
+
+    for number in my_list:
+        try:
+            sum_int += int(number)
+        except ValueError:
+            continue
+            
+    print(f"Сумма чисел = {sum_int}")
+    
 # Уточнение: в сумму добавляем только те значения, которые можно преобразовать к int'у
 # Например: int("-26") --> -26, а int("--26") --> ошибка
 ```
