@@ -35,7 +35,12 @@ n = 6
 
 ```python
 n = int(input("n: "))
-# TODO: you code here...
+count = 1
+
+with open("data\pyramid.txt", "w") as f:
+    for i in range(n):
+        f.write(f'{"*" * count:^{n * 2}}\n')
+        count += 2
 ```
 
 ---
